@@ -8,7 +8,7 @@ class Tenant extends Model {
 }
 
 Tenant.init({
-  id: { type: DataTypes.INTEGER, autoIncrement: true, primary key: true },
+  id: { type: DataTypes.INTEGER, autoIncrement: true, primaryKey: true },
   name: { type: DataTypes.STRING, allowNull: false },
   cnpj: { type: DataTypes.STRING, allowNull: false, unique: true },
 }, {

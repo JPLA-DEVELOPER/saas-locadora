@@ -1,5 +1,10 @@
 import sequelize from './config/database';
+
+//Importando os models(A ordem importa)
 import Tenant from './models/Tenant';
+import Customer from './models/Customer';
+import Asset from './models/Asset';
+import Rental from './models/Rental';
 
 async function syncDatabase() {
   try {
