@@ -1,12 +1,11 @@
 import { Request, Response } from 'express';
-import Asset from '../models/Asset';
+import { createAssetService } from '../services/assetService';
 
 export const createAsset = async (req: Request, res: Response) => {
   try {
-    const { serial_number, tenant_id } = req.body;
-    const asset = await Asset.create({ serial_number, tenant_id, status: 'disponivel' });
+    const asset = await createAssetService(req.body);
     return res.status(201).json(asset);
   } catch (error) {
-    return res.status(500).json({ error: 'Erro ao criar caçamba.' });
+    return res.status(500).json({ error: 'Erro ao criar ativo.' });
   }
 };
