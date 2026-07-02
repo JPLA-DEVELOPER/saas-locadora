@@ -1,4 +1,5 @@
 🚀 [SaaS para Locadora]
+
 <img width="734" height="377" alt="Captura de tela de 2026-07-01 21-17-06" src="https://github.com/user-attachments/assets/ad8eaccc-b2a2-4e87-9d2a-3f7cec6b9b45" />
 
 Bem-vindo!
@@ -8,6 +9,7 @@ Esta é uma solução SaaS (Software as a Service) robusta voltada para a gestã
 O sistema foi desenhado com foco em escalabilidade, isolamento de dados e manutenibilidade, utilizando as melhores práticas do mercado de desenvolvimento back-end.
 
 🛠 Tecnologias e Ferramentas:
+
 Linguagem: TypeScript
 
 Runtime: Node.js
@@ -23,6 +25,7 @@ Arquitetura: MVC (Layered Architecture)
 Modelagem: DBML
 
 🏗 Arquitetura do Projeto:
+
 O sistema foi estruturado em camadas para garantir baixo acoplamento e alta coesão:
 
 Controllers: Camada responsável por receber as requisições HTTP e retornar respostas.
@@ -36,10 +39,12 @@ Schemas (Zod): Camada de validação de dados, garantindo que nenhum dado malfor
 Models: Representação das entidades no banco de dados.
 
 📊 Modelagem de Dados:
+
 O projeto utiliza uma estrutura Multi-tenant, onde todos os registros são vinculados a um tenant_id, garantindo que os dados de um cliente nunca sejam expostos a outro.
 
 
 💡 Funcionalidades Principais:
+
 ✅ Isolamento Multi-tenant: Segurança garantida entre locadoras.
 
 ✅ Validação de Dados: Schemas robustos utilizando Zod.
@@ -49,8 +54,9 @@ O projeto utiliza uma estrutura Multi-tenant, onde todos os registros são vincu
 ✅ Fluxo de Locação: Criação de contratos, itens da locação e controle financeiro.
 
 👨‍💻 Autor
-Feito por João Paulo Lima de Albuquerque.
 
-[LinkedIn](https://www.linkedin.com/in/jpladeveloper)
+João Paulo Lima de Albuquerque.
 
-[GitHub] (https://github.com/JPLA-DEVELOPER)
+(https://www.linkedin.com/in/jpladeveloper)
+
+(https://github.com/JPLA-DEVELOPER)
