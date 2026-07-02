@@ -1,8 +1,8 @@
 🚀 [**SaaS para Locadora**]
 
-<img width="734" height="377" alt="Captura de tela de 2026-07-01 21-17-06" src="https://github.com/user-attachments/assets/ad8eaccc-b2a2-4e87-9d2a-3f7cec6b9b45" />
-**Diagrama ER**
-
+<figure><img width="734" height="377" alt="Captura de tela de 2026-07-01 21-17-06" src="https://github.com/user-attachments/assets/ad8eaccc-b2a2-4e87-9d2a-3f7cec6b9b45" />
+<figcaption><b>Figura 1:</b> Diagrama ER </figcaption>
+</figure>
 
 **Bem-vindo!**
 
