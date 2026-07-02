@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "ts-node-dev --respawn src/server.ts",
+    "server": "ts-node src/server.ts",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:db": "ts-node src/test-db.ts",
-    "server": "ts-node src/server.ts"
+    "test:db": "ts-node src/test-db.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "João Paulo Lima",
   "license": "ISC",
-  "description": "",
+  "description": "SaaS para locadora de caçambas de entulho e containers para obras",
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.6",
@@ -19,6 +21,8 @@
     "jsonwebtoken": "^9.0.3",
     "mysql2": "^3.22.5",
     "sequelize": "^6.37.8",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
     "zod": "^4.4.3"
   },
   "devDependencies": {
@@ -27,6 +31,8 @@
     "@types/express": "^5.0.6",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^26.0.1",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.6",
     "ts-node-dev": "^2.0.0",
     "typescript": "^6.0.3"
   }
