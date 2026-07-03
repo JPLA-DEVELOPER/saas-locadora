@@ -11,7 +11,7 @@ export const register = async (req: AuthRequest, res: Response) => {
     return res.status(201).json(result);
   } catch (error: any) {
     if (error instanceof ZodError) {
-      return res.status(400).json({ errors: error.errors });
+      return res.status(400).json({ errors: error.issues });
     }
     return res.status(400).json({ error: error.message });
   }
@@ -24,7 +24,7 @@ export const login = async (req: AuthRequest, res: Response) => {
     return res.status(200).json(result);
   } catch (error: any) {
     if (error instanceof ZodError) {
-      return res.status(400).json({ errors: error.errors });
+      return res.status(400).json({ errors: error.issues });
     }
     return res.status(401).json({ error: error.message });
   }
@@ -50,7 +50,7 @@ export const createUser = async (req: AuthRequest, res: Response) => {
     return res.status(201).json(result);
   } catch (error: any) {
     if (error instanceof ZodError) {
-      return res.status(400).json({ errors: error.errors });
+      return res.status(400).json({ errors: error.issues });
     }
     return res.status(400).json({ error: error.message });
   }
